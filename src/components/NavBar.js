@@ -5,7 +5,10 @@ import accountIconNight from "../images/account-icon-night.png"
 import premiumIconNight from "../images/premium-icon-night.png"
 import tempIconNight from "../images/temp-icon-night.png"
 
-export default function NavBar(){
+export default function NavBar(props){
+
+    console.log(props.dataObject)
+
     return(
         <nav className="nav-bar-container">
             <div className="top-nav">
@@ -27,7 +30,7 @@ export default function NavBar(){
             <div className="middle-nav">
                 <div>
                     <div className="current-location-container">
-                        <p>76 Union, New Jersey</p>
+                        <p>{`${props.dataObject.current.temp_f}`}° {`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`} </p>
                     </div>
                 </div>
             </div>

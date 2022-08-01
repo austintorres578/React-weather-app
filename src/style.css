@@ -77,7 +77,7 @@ body{
 
 }
 .time-div-containers div{
-    border-bottom: solid 1px white;
+    border-bottom: solid 2px white;
 }
 
 .time-div-containers div p{
@@ -90,15 +90,293 @@ body{
     background-color: #393363;
     border-radius: 10px;
     height: 250px;
+    margin-bottom: 15px;
 }
 .temperture-location{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 20px;
     height: 45px;
     background-color: #100f1f;
     border-radius: 10px 10px 0px 0px;
 }
 .temperture-location p{
+    font-size: 20px;
+    color: white;
+}
+.temperture-location p{
     margin: 0px;
+}
+.temperture{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .info-section-container{
     padding: 50px;
+}
+.big-weather{
+    margin: 5px 0px 0px 0px;
+    color: white;
+    font-size: 90px;
+}
+.weather-type{
+    color: white;
+    font-size: 25px;
+    margin: 0px;
+}
+.day-night{
+    font-size: 25px;
+    color: white;
+    margin: 0px;
+}
+.weather-image img{
+    height: 150px;
+    width: auto;
+
+}
+.time-of-day-container{
+    height: 100%;
+    padding: 0px 0px 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 15px;
+}
+.time-of-day-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.time-of-day-header p{
+    font-size: 20px;
+    margin: 0px;
+    color: black;
+}
+.time-blocks{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.time-block:nth-child(2){
+    border-left: solid 1px lightgrey;
+}
+.time-block:nth-child(3){
+    border-left: solid 1px lightgrey;
+    border-right: solid 1px lightgrey;
+}
+.time-blocks img{
+    height: 100px;
+    width: auto;
+}
+
+.time-block p{
+    margin: 0px;
+}
+.time-header{
+    font-size: 24px;
+}
+.time-temp{
+    color: blue;
+    font-size: 35px;
+}
+.time-percent{
+    font-size:20px;
+}
+
+.next-hours-button-container button{
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    height: 35px;
+    width: 100px;
+}
+.weather-stats-container{
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px
+}
+.weather-stats-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45px
+}
+.weather-stats-header p{
+    margin: 0px;
+    font-size: 20px;
+}
+.weather-stats-feel-container{
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.weather-stats-feel p{
+    margin: 0px;
+}
+.temperture-feel{
+    font-size: 60px;
+}
+.feels-like-text{
+    font-size: 18px;
+}
+.weather-stats-image img{
+    height: 125px;
+    width: auto;
+}
+
+.weather-stats{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
+}
+
+.stat-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 1px lightgrey;
+    margin-right: 10%;
+}
+
+.stat-text{
+    display: flex;
+    align-items: center;
+}
+.stat-text img{
+    text-align: center;
+    height: 25px;
+    margin-right: 20px;
+    width: auto;
+}
+.hourly-section-container{
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.hourly-section-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.hourly-section-header p{
+    margin: 0px;
+    font-size: 20px;
+}
+.hourly-time-blocks{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hourly-time-blocks div:nth-child(2){
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+}
+.hourly-time-blocks div:nth-child(3){
+    border-right: solid 1px lightgray;
+}
+.hourly-time-blocks div:nth-child(4){
+    border-right: solid 1px lightgray;
+}
+.hourly-header{
+    margin: 0px;
+    font-size: 18px;
+}
+.hourly-temp{
+    margin: 0px;
+    font-size: 35px;
+    color: blue;
+}
+.rain-percent{
+    margin: 0px;
+    font-size: 20px;
+}
+.hourly-button-container button{
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    height: 35px;
+    width: 125px;
+}
+.daily-forecast-container{
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.daily-forecast-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 45px;
+    margin-bottom: 10px;
+}
+.daily-forecast-header p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.daily-blocks{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.daily-blocks div:nth-child(2){
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+}
+.daily-blocks div:nth-child(3){
+    border-right: solid 1px lightgray;
+}
+.daily-blocks div:nth-child(4){
+    border-right: solid 1px lightgray;
+}
+.day{
+    margin: 0px;
+    font-size: 20px;
+}
+.day-high{
+    margin: 0px;
+    font-size: 35px;
+    color: blue;
+}
+.day-low{
+    margin: 0px;
+    font-size: 20px;
+}
+.daily-forecast-button-container button{
+    background-color: blue;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    height: 35px;
+    width: 125px;
 }
