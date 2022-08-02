@@ -12,19 +12,10 @@ export default function NavBar(props){
     return(
         <nav className="nav-bar-container">
             <div className="top-nav">
-                <div className="logo-container">
-                    <img src={siteBannerNight}></img>
-                </div>
                 <div className="zip-search-container">
                     <form>
                         <input id="zip-search" placeholder="Search Zip Code"></input>
                     </form>
-                </div>
-                <div className="nav-buttons-container">
-                    <button><img src={tempIconNight}></img></button>
-                    <button><img src={premiumIconNight}></img></button>
-                    <button><img src={accountIconNight}></img></button>
-                    <button><img src={hamMenuNight}></img></button>
                 </div>
             </div>
             <div className="middle-nav">
@@ -43,7 +34,7 @@ export default function NavBar(props){
                         <p>Hourly</p>
                     </div>
                     <div>
-                        <p>10 Day</p>
+                        <p>3 Day</p>
                     </div>
                 </div>
             </div>

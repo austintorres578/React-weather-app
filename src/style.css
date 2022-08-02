@@ -6,7 +6,7 @@ body{
 
 .top-nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 20px;
     padding-right: 20px;
     height: 75px;
@@ -21,10 +21,12 @@ body{
     height: 50px;
 }
 .current-location-container{
-    padding-left: 80px;
-    border-right: solid 1px lightgrey;
-    width: 30%;
+    text-align: center;
     height: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
 }
 .current-location-container p{
     margin: 0px;
@@ -42,11 +44,9 @@ body{
     height: 80%;
     width: auto;
 }
-.zip-search-container{
-    width: 30%;
-}
+
 .zip-search-container input{
-    width: 80%;
+    width: 300px;
     height: 30px;
     border-radius: 30px;
     background-color: #5a5973;
@@ -81,6 +81,8 @@ body{
 }
 
 .time-div-containers div p{
+    margin: 10px 0px 0px 0px;
+    font-size: 20px;
     color: white;
 }
 .info-section-container{
@@ -96,6 +98,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     padding-left: 20px;
     height: 45px;
     background-color: #100f1f;
@@ -149,6 +152,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     height: 45px;
     margin-bottom: 10px;
 }
@@ -188,7 +192,9 @@ body{
 .time-percent{
     font-size:20px;
 }
-
+.next-hours-button-container{
+    text-align: center;
+}
 .next-hours-button-container button{
     background-color: blue;
     border: none;
@@ -212,6 +218,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     height: 45px
 }
 .weather-stats-header p{
@@ -275,6 +282,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     height: 45px;
     margin-bottom: 10px;
 }
@@ -321,6 +329,9 @@ body{
     margin: 0px;
     font-size: 20px;
 }
+.hourly-button-container{
+    text-align: center;
+}
 .hourly-button-container button{
     background-color: blue;
     border: none;
@@ -343,6 +354,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     height: 45px;
     margin-bottom: 10px;
 }
@@ -353,7 +365,7 @@ body{
 
 .daily-blocks{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 33% 33% 33%;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -361,12 +373,7 @@ body{
     border-left: solid 1px lightgray;
     border-right: solid 1px lightgray;
 }
-.daily-blocks div:nth-child(3){
-    border-right: solid 1px lightgray;
-}
-.daily-blocks div:nth-child(4){
-    border-right: solid 1px lightgray;
-}
+
 .day{
     margin: 0px;
     font-size: 20px;
@@ -379,6 +386,9 @@ body{
 .day-low{
     margin: 0px;
     font-size: 20px;
+}
+.daily-forecast-button-container{
+    text-align: center;
 }
 .daily-forecast-button-container button{
     background-color: blue;

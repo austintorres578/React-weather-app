@@ -21,7 +21,9 @@ export default function InfoSection(props){
             <HourlySection 
                 dataObject={props.dataObject}
             />
-            <DailyForecast />
+            <DailyForecast 
+                dataObject={props.dataObject}
+            />
         </section>
     )
 }
