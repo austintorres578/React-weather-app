@@ -1025,12 +1025,12 @@ export default function HomePage(){
         }
     })
 
-    const [defaultZip, setDefaultZip] = useState("07305")
+    const [defaultZip, setDefaultZip] = useState("07083")
     
 
     let getData = (zip) => { 
 
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=b28574dd6599479e944222901212812&q=${zip}`)
+        fetch(`http://api.weatherapi.com/v1/forecast.json?key=b28574dd6599479e944222901212812&q=${zip}&days=3&`)
         .then((response) => response.json())
         .then((data) => {
             setRecievedData(data)
@@ -1044,12 +1044,17 @@ export default function HomePage(){
      getData(defaultZip);
     }, [""]);
 
+    let dt = new Date();
+    console.log(dt.getHours());
+
     return(
         <div className="home-page">
             <NavBar
                 dataObject={recievedData}
             />
-            <InfoSection />
+            <InfoSection 
+                dataObject={recievedData}
+            />
         </div>
     )
 }

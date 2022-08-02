@@ -8,7 +8,16 @@ import dewPointIcon from "../images/dew-point-icon.png"
 import uvIndex from "../images/uv-index.png"
 import moonIcon from "../images/moon-icon.png"
 
-export default function WeatherStats(){
+export default function WeatherStats(props){
+
+    let hour
+
+
+    if(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length).length===5){
+        hour = props.dataObject.current.last_updated.slice(11,13)
+    }
+
+
     return(
         <section className="weather-stats-container">
             <div className="weather-stats-header">
@@ -16,11 +25,11 @@ export default function WeatherStats(){
             </div>
             <div className="weather-stats-feel-container">
                 <div className="weather-stats-feel">
-                    <p className="temperture-feel">87°</p>
+                    <p className="temperture-feel">{`${props.dataObject.current.feelslike_f}`}°</p>
                     <p className="feels-like-text">Feels Like</p>
                 </div>
                 <div className="weather-stats-image">
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/113.png"></img>
+                    <img src={`${props.dataObject.current.condition.icon}`}></img>
                 </div>
             </div>
             <div className="weather-stats">
@@ -31,7 +40,7 @@ export default function WeatherStats(){
                             <p>High/Low</p>
                         </div>
                         <div>
-                            <p>--/67°</p>
+                            <p>{`${props.dataObject.forecast.forecastday[0].day.maxtemp_f}`}/{`${props.dataObject.forecast.forecastday[0].day.mintemp_f}`}°</p>
                         </div>
                     </div>
                     <div className="stat-container">
@@ -40,7 +49,7 @@ export default function WeatherStats(){
                             <p>Humidity</p>
                         </div>
                         <div>
-                            <p>52%</p>
+                            <p>{`${props.dataObject.current.humidity}`}%</p>
                         </div>
                     </div>
                     <div className="stat-container">
@@ -49,7 +58,7 @@ export default function WeatherStats(){
                             <p>Pressure</p>
                         </div>
                         <div>
-                            <p>30.14 in</p> 
+                            <p>{`${props.dataObject.current.pressure_in}`} in</p> 
                         </div>
                     </div>
                     <div className="stat-container">
@@ -58,7 +67,7 @@ export default function WeatherStats(){
                             <p>Visibility</p>
                         </div>
                         <div>
-                            <p>10 mi</p>
+                            <p>{`${props.dataObject.current.vis_miles}`} mi</p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +78,7 @@ export default function WeatherStats(){
                             <p>Wind</p>
                         </div>
                         <div>
-                            <p>4 mph</p>
+                            <p>{`${props.dataObject.current.gust_mph}`} mph</p>
                         </div>
                     </div>
                     <div className="stat-container">
@@ -78,7 +87,7 @@ export default function WeatherStats(){
                             <p>Dew Point</p>
                         </div>
                         <div>
-                            <p>56</p>
+                            <p>{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)].dewpoint_f}°`}</p>
                         </div>
                     </div>
                     <div className="stat-container">
@@ -87,7 +96,7 @@ export default function WeatherStats(){
                             <p>UV Index</p>
                         </div>
                         <div>
-                            <p>0 of 10</p>
+                            <p>{`${props.dataObject.current.uv}`} of 10</p>
                         </div>
                     </div>
                     <div className="stat-container">
@@ -96,7 +105,7 @@ export default function WeatherStats(){
                             <p>Moon Phase</p>
                         </div>
                         <div>
-                           <p>Waxing Crescent</p> 
+                           <p>{`${props.dataObject.forecast.forecastday[0].astro.moon_phase}`}</p> 
                         </div>
                     </div>
                 </div>

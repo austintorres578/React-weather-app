@@ -5,13 +5,22 @@ import TempertureBlock from "./TempertureBlock";
 import TimeOfDay from "./TimeOfDay";
 import WeatherStats from "./WeatherStats";
 
-export default function InfoSection(){
+export default function InfoSection(props){
+
     return(
         <section className="info-section-container">
-            <TempertureBlock />
-            <TimeOfDay />
-            <WeatherStats/>
-            <HourlySection />
+            <TempertureBlock 
+                dataObject={props.dataObject}
+            />
+            <TimeOfDay 
+                dataObject={props.dataObject}
+            />
+            <WeatherStats
+                dataObject={props.dataObject}
+            />
+            <HourlySection 
+                dataObject={props.dataObject}
+            />
             <DailyForecast />
         </section>
     )

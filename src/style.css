@@ -140,7 +140,7 @@ body{
 }
 .time-of-day-container{
     height: 100%;
-    padding: 0px 0px 20px 20px;
+    padding: 0px 20px 20px 20px;
     border-radius: 10px;
     background-color: white;
     margin-bottom: 15px;
@@ -306,6 +306,16 @@ body{
     margin: 0px;
     font-size: 35px;
     color: blue;
+}
+.rain-percent-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rain-percent-container img{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
 }
 .rain-percent{
     margin: 0px;

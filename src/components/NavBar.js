@@ -45,21 +45,6 @@ export default function NavBar(props){
                     <div>
                         <p>10 Day</p>
                     </div>
-                    <div>
-                        <p>Weekend</p>
-                    </div>
-                    <div>
-                        <p>Monthly</p>
-                    </div>
-                    <div>
-                        <p>Radar</p>
-                    </div>
-                    <div>
-                        <p>Floods</p>
-                    </div>
-                    <div>
-                        <p>More Forecasts</p>
-                    </div>
                 </div>
             </div>
         </nav>

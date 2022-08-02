@@ -1,6 +1,7 @@
 import React from "react";
+import rainIcon from "../images/rain-icon.png"
 
-export default function TimeOfDay(){
+export default function TimeOfDay(props){
     return(
         <section className="time-of-day-container">
             <div className="time-of-day-header">
@@ -9,27 +10,39 @@ export default function TimeOfDay(){
             <div className="time-blocks">
                 <div className="time-block">
                     <p className="time-header">Morning</p>
-                    <p className="time-temp">80°</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/113.png"></img>
-                    <p className="time-percent">0%</p>
+                    <p className="time-temp">{`${props.dataObject.forecast.forecastday[0].hour[7].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[0].hour[7].condition.icon}`}></img>
+                    <div className="rain-percent-container">
+                        <img src={rainIcon}></img>
+                        <p className="time-percent">{`${props.dataObject.forecast.forecastday[0].hour[7].chance_of_rain}`}%</p>
+                    </div>
                 </div>
                 <div className="time-block">
                     <p className="time-header">Afternoon</p>
-                    <p className="time-temp">88°</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/116.png"></img>
-                    <p className="time-percent">0%</p>
+                    <p className="time-temp">{`${props.dataObject.forecast.forecastday[0].hour[14].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[0].hour[14].condition.icon}`}></img>
+                    <div className="rain-percent-container">
+                        <img src={rainIcon}></img>
+                        <p className="time-percent">{`${props.dataObject.forecast.forecastday[0].hour[14].chance_of_rain}`}%</p>
+                    </div>
                 </div>
                 <div className="time-block">
                     <p className="time-header">Evening</p>
-                    <p className="time-temp">78°</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/day/176.png"></img>
-                    <p className="time-percent">0%</p>
+                    <p className="time-temp">{`${props.dataObject.forecast.forecastday[0].hour[18].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[0].hour[18].condition.icon}`}></img>
+                    <div className="rain-percent-container">
+                        <img src={rainIcon}></img>
+                        <p className="time-percent">{`${props.dataObject.forecast.forecastday[0].hour[18].chance_of_rain}`}%</p>
+                    </div>
                 </div>
                 <div className="time-block">
                     <p className="time-header">Overnight</p>
-                    <p className="time-temp">69°</p>
-                    <img src="//cdn.weatherapi.com/weather/64x64/night/113.png"></img>
-                    <p className="time-percent">0%</p>
+                    <p className="time-temp">{`${props.dataObject.forecast.forecastday[0].hour[22].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[0].hour[22].condition.icon}`}></img>
+                    <div className="rain-percent-container">
+                        <img src={rainIcon}></img>
+                        <p className="time-percent">{`${props.dataObject.forecast.forecastday[0].hour[22].chance_of_rain}`}%</p>
+                    </div>
                 </div>
             </div>
             <div className="next-hours-button-container">
