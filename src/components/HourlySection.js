@@ -29,7 +29,7 @@ export default function HourlySection(props){
     }
 
     return(
-        <section className="hourly-section-container">
+        <section id="hourly-forecast" className="hourly-section-container">
             <div className="hourly-section-header">
                 <p>Hourly Forecast</p>
             </div>

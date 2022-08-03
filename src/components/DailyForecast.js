@@ -32,7 +32,7 @@ export default function DailyForecast(props){
     }
 
     return(
-        <section className="daily-forecast-container">
+        <section id="daily-forecast" className="daily-forecast-container">
             <div className="daily-forecast-header">
                 <p>Daily Forecast</p>
             </div>
@@ -69,7 +69,7 @@ export default function DailyForecast(props){
                 </div>
             </div>
             <div className="daily-forecast-button-container">
-                <button>Next 10 Days</button>
+                <button>Next 2 Days</button>
             </div>
         </section>
     )

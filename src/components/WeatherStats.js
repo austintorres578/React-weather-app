@@ -19,9 +19,9 @@ export default function WeatherStats(props){
 
 
     return(
-        <section className="weather-stats-container">
+        <section className="weather-stats-container" >
             <div className="weather-stats-header">
-                <p>Weather Today in Union, NJ</p>
+                <p>Weather Today in {`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`}</p>
             </div>
             <div className="weather-stats-feel-container">
                 <div className="weather-stats-feel">

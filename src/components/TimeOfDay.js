@@ -3,9 +3,9 @@ import rainIcon from "../images/rain-icon.png"
 
 export default function TimeOfDay(props){
     return(
-        <section className="time-of-day-container">
+        <section id="today-forecast" className="time-of-day-container">
             <div className="time-of-day-header">
-                <p>Today's Forecast for Union, NJ</p>
+                <p>Today's Forecast for {`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`}</p>
             </div>
             <div className="time-blocks">
                 <div className="time-block">

@@ -7,16 +7,24 @@ import tempIconNight from "../images/temp-icon-night.png"
 
 export default function NavBar(props){
 
+
     console.log(props.dataObject)
+
+    function search(event){
+        event.preventDefault()
+        props.searchZip(document.getElementById("zip-search").value)
+
+    }
 
     return(
         <nav className="nav-bar-container">
             <div className="top-nav">
                 <div className="zip-search-container">
-                    <form>
+                    <form onSubmit={search}>
                         <input id="zip-search" placeholder="Search Zip Code"></input>
                     </form>
                 </div>
+                <button onClick={search} className="search-button">Search</button>
             </div>
             <div className="middle-nav">
                 <div>

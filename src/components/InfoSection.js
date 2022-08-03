@@ -7,6 +7,8 @@ import WeatherStats from "./WeatherStats";
 
 export default function InfoSection(props){
 
+    
+
     return(
         <section className="info-section-container">
             <TempertureBlock 
