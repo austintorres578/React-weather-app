@@ -303,6 +303,14 @@ body{
     margin: 0px;
     font-size: 20px;
 }
+@media(max-width:400px){
+    div .weather-stats-feel-container{
+        flex-direction: column-reverse;
+        padding: 0px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
 .weather-stats-feel-container{
     padding-left: 60px;
     padding-right: 60px;
