@@ -2977,7 +2977,9 @@ export default function HomePage(){
 
     const [recievedData, setRecievedData] = useState(placeholderLocation)
 
-    const [defaultZip, setDefaultZip] = useState("89101")
+    const [loading, setLoading] = useState(true)
+
+    const [defaultZip, setDefaultZip] = useState("07083")
     
 
     let getData = (zip) => { 
@@ -3006,7 +3008,6 @@ export default function HomePage(){
     }, [""]);
 
     let dt = new Date();
-    console.log(dt.getHours());
 
     return(
         <div className="home-page">
@@ -3015,9 +3016,11 @@ export default function HomePage(){
                 currentZip={defaultZip}
                 changeZip={setDefaultZip}
                 searchZip={getData}
+                
             />
             <InfoSection 
                 dataObject={recievedData}
+                currentHour={dt.getHours()}
             />
         </div>
     )

@@ -403,19 +403,7 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
-.hourly-time-blocks div{
-    padding-bottom: 15px;
-}
-.hourly-time-blocks div:nth-child(2){
-    border-left: solid 1px lightgray;
-    border-right: solid 1px lightgray;
-}
-.hourly-time-blocks div:nth-child(3){
-    border-right: solid 1px lightgray;
-}
-.hourly-time-blocks div:nth-child(4){
-    border-right: solid 1px lightgray;
-}
+
 .hourly-header{
     margin: 0px;
     font-size: 18px;

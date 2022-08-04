@@ -4,7 +4,6 @@ import rainIcon from "../images/rain-icon.png"
 export default function DailyForecast(props){
 
     let day = new Date();
-    console.log(day.getDay()); 
 
     function dayChecker(date){
         if(date===0){

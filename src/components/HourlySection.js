@@ -1,15 +1,22 @@
 import React from "react";
+import HourlyBlock from "./HourlyBlock";
 import rainIcon from "../images/rain-icon.png"
 
 export default function HourlySection(props){
 
     let hour
 
+    let nextHours = []
+
 
     if(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length).length===5){
-        hour = props.dataObject.current.last_updated.slice(11,13)
+        hour = Number(props.dataObject.current.last_updated.slice(11,13))
+        if(hour==="00"){
+            hour=Number(hour)
+        }
+
+        console.log(hour)
     }
-    
 
     function timeChecker (num,x){
         let combinedHour = num + x;
@@ -20,63 +27,79 @@ export default function HourlySection(props){
             combinedHour=`${combinedHour-12}:00 PM`
         }else if(combinedHour===12){
             combinedHour=`${combinedHour}:00 PM`
-        }else if(combinedHour=="00"){
+        }else if(combinedHour===0){
             combinedHour="12:00 AM"
         }else{
             combinedHour=`${combinedHour}:00 AM`
         }
         return combinedHour
     }
+    function dayChange(num){
+        if(num>23){
+            return 1
+        }else{
+            return 0
+        }
+    }
+    function numberReset (num){
+        if(num>23){
+            num = num-24
+            return num
+        }else{
+            return num
+        }
+        
+    }
 
     return(
-        <section id="hourly-forecast" className="hourly-section-container">
+        <section className="hourly-section-container">
             <div className="hourly-section-header">
                 <p>Hourly Forecast</p>
             </div>
             <div className="hourly-time-blocks">
                 <div>
                     <p className="hourly-header">Now</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)].temp_f}`}°</p>
-                    <img src={`${props.dataObject.forecast.forecastday[0].hour[Number(hour)].condition.icon}`}></img>
+                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[0].hour[hour].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].chance_of_rain}`}%</p>
                     </div>
                 </div>
                 <div>
-                    <p className="hourly-header">{timeChecker(Number(hour),1)}</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)].temp_f}`}°</p>
-                    <img src={`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+1].condition.icon}`}></img>
+                    <p className="hourly-header">{timeChecker(hour,1)}</p>
+                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].chance_of_rain}`}%</p>
                     </div>
                 </div>
                 <div>
-                    <p className="hourly-header">{timeChecker(Number(hour),2)}</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+1].temp_f}`}°</p>
-                    <img src={`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+2].condition.icon}`}></img>
+                    <p className="hourly-header">{timeChecker(hour,2)}</p>
+                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].chance_of_rain}`}%</p>
                     </div>
                 </div>
                 <div>
-                    <p className="hourly-header">{timeChecker(Number(hour),3)}</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+2].temp_f}`}°</p>
-                    <img src={`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+4].condition.icon}`}></img>
+                    <p className="hourly-header">{timeChecker(hour,3)}</p>
+                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+3)].hour[numberReset(hour+3)].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+3)].hour[numberReset(hour+3)].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour+3)].hour[numberReset(hour+3)].chance_of_rain}`}%</p>
                     </div>
                 </div>
                 <div>
-                    <p className="hourly-header">{timeChecker(Number(hour),4)}</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+3].temp_f}`}°</p>
-                    <img src={`${props.dataObject.forecast.forecastday[0].hour[Number(hour)+4].condition.icon}`}></img>
+                    <p className="hourly-header">{timeChecker(hour,4)}</p>
+                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+4)].hour[numberReset(hour+4)].temp_f}`}°</p>
+                    <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+4)].hour[numberReset(hour+4)].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour+4)].hour[numberReset(hour+4)].chance_of_rain}`}%</p>
                     </div>
                 </div>
             </div>
