@@ -4,6 +4,8 @@ import NavBar from "./NavBar";
 
 export default function HomePage(){
 
+    let savedZip = localStorage.getItem("savedZip");
+
     let placeholderLocation = {
         "location": {
             "name": "Las Vegas",
@@ -2977,9 +2979,13 @@ export default function HomePage(){
 
     const [recievedData, setRecievedData] = useState(placeholderLocation)
 
-    const [loading, setLoading] = useState(true)
+    const [defaultZip, setDefaultZip] = useState(savedZip)
 
-    const [defaultZip, setDefaultZip] = useState("07083")
+    console.log(savedZip)
+
+    if(savedZip===null){
+        localStorage.setItem("savedZip","89101")
+    }
     
 
     let getData = (zip) => { 
@@ -2989,6 +2995,7 @@ export default function HomePage(){
         .then((data) => {
             if(data["error"]===undefined){
                 setRecievedData(data)
+                localStorage.setItem("savedZip",zip)
             }else{
                 setRecievedData(placeholderLocation)
                 alert("invalid zip")
@@ -3012,6 +3019,7 @@ export default function HomePage(){
     return(
         <div className="home-page">
             <NavBar
+            
                 dataObject={recievedData}
                 currentZip={defaultZip}
                 changeZip={setDefaultZip}
