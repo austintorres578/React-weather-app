@@ -5,14 +5,16 @@ export default function TempertureBlock(props){
     let hour
 
     if(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length).length===5){
-        hour = props.dataObject.current.last_updated.slice(11,13)
+        hour = Number(props.dataObject.current.last_updated.slice(11,13))
     }
-    if(hour>12){
-        hour=`${hour-12}:00 PM`
-    }else if(hour===12){
-        hour="12:00 PM"
-    }else if(hour===0){
+    if(hour===0){
         hour="12:00 AM"
+    }
+    else if(hour===12){
+        hour="12:00 PM"
+    }
+    else if(hour>12){
+        hour=`${hour-12}:00 PM`
     }else{
         hour=`${hour}:00 AM`
     }
