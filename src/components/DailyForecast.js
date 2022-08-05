@@ -6,6 +6,11 @@ export default function DailyForecast(props){
     let day = new Date();
 
     function dayChecker(date){
+        console.log(date)
+
+        if(date>=7){
+            date=date-7
+        }
         if(date===0){
             return "Sun"
         }

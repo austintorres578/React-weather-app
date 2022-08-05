@@ -89,8 +89,13 @@ body{
 
 }
 .time-div-containers div{
-    border-bottom: solid 2px white;
     cursor: pointer;
+}
+.time-div-containers a{
+    text-decoration: none;
+}
+.active-link{
+    border-bottom: solid 2px white;
 }
 
 
@@ -402,6 +407,7 @@ body{
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .hourly-header{

@@ -1,9 +1,5 @@
+import {NavLink, Link, Router} from "react-router-dom";
 import React from "react";
-import siteBannerNight from "../images/site-banner-night.png"
-import hamMenuNight from "../images/ham-menu-night.png"
-import accountIconNight from "../images/account-icon-night.png"
-import premiumIconNight from "../images/premium-icon-night.png"
-import tempIconNight from "../images/temp-icon-night.png"
 
 export default function NavBar(props){
 
@@ -36,7 +32,7 @@ export default function NavBar(props){
             <div className="bottom-nav">
                 <div className="time-div-containers">
                     <div>
-                        <p>Today</p>
+                        <p>Home</p>
                     </div>
                     <div>
                         <p>Hourly</p>

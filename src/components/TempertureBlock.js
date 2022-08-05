@@ -20,7 +20,7 @@ export default function TempertureBlock(props){
     return(
         <section className="temperture-block-container">
             <div className="temperture-location">
-                <p>{`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`} As of {hour} EDT</p>
+                <p>{`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`} As of {hour}</p>
             </div>
             <div className="temperture">
                 <div>

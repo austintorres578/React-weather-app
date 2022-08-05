@@ -2990,7 +2990,7 @@ export default function HomePage(){
 
     let getData = (zip) => { 
 
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=b28574dd6599479e944222901212812&q=${zip}&days=3&`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=b28574dd6599479e944222901212812&q=${zip}&days=3&`)
         .then((response) => response.json())
         .then((data) => {
             if(data["error"]===undefined){

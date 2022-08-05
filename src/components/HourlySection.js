@@ -1,5 +1,4 @@
 import React from "react";
-import HourlyBlock from "./HourlyBlock";
 import rainIcon from "../images/rain-icon.png"
 
 export default function HourlySection(props){
@@ -20,8 +19,12 @@ export default function HourlySection(props){
 
     function timeChecker (num,x){
         let combinedHour = num + x;
-        if(combinedHour>24){
+        if(combinedHour===24){
+            combinedHour="12:00 AM"
+        }
+        else if(combinedHour>23){
             combinedHour=`${combinedHour-24}:00 AM`
+            
         }
         else if(combinedHour>12){
             combinedHour=`${combinedHour-12}:00 PM`
@@ -32,6 +35,7 @@ export default function HourlySection(props){
         }else{
             combinedHour=`${combinedHour}:00 AM`
         }
+        
         return combinedHour
     }
     function dayChange(num){
