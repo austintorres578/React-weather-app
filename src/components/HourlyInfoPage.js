@@ -1,26 +1,23 @@
-import React, { useState, useEffect } from "react";
-import InfoSection from "./InfoSection";
+import React from "react";
+import HourlyInfoSection from "./HourlyInfoSection";
 import NavBar from "./NavBar";
 
-export default function HomePage(props){
-    
-    console.log(props)
-    
-    let dt = new Date();
+export default function HourlyInfoPage(props){
 
     return(
-        <div className="home-page">
+        <section>
             <NavBar
                 dataObject={props.recievedData}
                 currentZip={props.defaultZip}
                 changeZip={props.setDefaultZip}
                 searchZip={props.getData}
-                
             />
-            <InfoSection 
+            <HourlyInfoSection
                 dataObject={props.recievedData}
-                currentHour={dt.getHours()}
+                currentZip={props.defaultZip}
+                changeZip={props.setDefaultZip}
+                searchZip={props.getData}
             />
-        </div>
+        </section>
     )
 }

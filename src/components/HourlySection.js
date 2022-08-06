@@ -5,9 +5,6 @@ export default function HourlySection(props){
 
     let hour
 
-    let nextHours = []
-
-
     if(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length).length===5){
         hour = Number(props.dataObject.current.last_updated.slice(11,13))
         if(hour==="00"){
