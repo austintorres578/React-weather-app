@@ -1,5 +1,6 @@
 import React from "react";
 import rainIcon from "../images/rain-icon.png"
+import { Link } from "react-router-dom";
 
 export default function DailyForecast(props){
 
@@ -73,7 +74,9 @@ export default function DailyForecast(props){
                 </div>
             </div>
             <div className="daily-forecast-button-container">
+                <Link to="/details">
                 <button>Next 2 Days</button>
+                </Link>
             </div>
         </section>
     )

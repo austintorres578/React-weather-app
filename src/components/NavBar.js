@@ -12,7 +12,7 @@ export default function NavBar(props){
     }
 
     return(
-            <nav className="nav-bar-container">
+            <nav id="nav" className="nav-bar-container">
                 <div className="top-nav">
                     <div className="zip-search-container">
                         <form onSubmit={search}>

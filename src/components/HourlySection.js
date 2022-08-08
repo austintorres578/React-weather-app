@@ -1,5 +1,6 @@
 import React from "react";
 import rainIcon from "../images/rain-icon.png"
+import { Link } from "react-router-dom";
 
 export default function HourlySection(props){
 
@@ -105,7 +106,9 @@ export default function HourlySection(props){
                 </div>
             </div>
             <div className="hourly-button-container">
-                <button>Next 48 Hours</button>
+                <Link to="/details">
+                    <button>Next 48 Hours</button>
+                </Link>
             </div>
         </section>
     )

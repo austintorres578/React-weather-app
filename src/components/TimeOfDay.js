@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Route, Routes , Link} from "react-router-dom";
 import rainIcon from "../images/rain-icon.png"
 
 export default function TimeOfDay(props){
@@ -46,8 +47,12 @@ export default function TimeOfDay(props){
                 </div>
             </div>
             <div className="next-hours-button-container">
-                <button>Next Hours</button>
+                    <Link to="/details">
+                    <button>Next Hours</button>
+                    </Link>
             </div>
         </section>
     )
-}
+
+    }
+

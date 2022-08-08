@@ -3040,11 +3040,3 @@ export default function App(props){
         </BrowserRouter>
     )
 }
-
-            // <NavBar
-            //     dataObject={props.recievedData}
-            //     currentZip={props.defaultZip}
-            //     changeZip={props.setDefaultZip}
-            //     searchZip={props.getData}
-                
-            // />
