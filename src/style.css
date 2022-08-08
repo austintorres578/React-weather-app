@@ -523,8 +523,25 @@ body{
     width: 125px;
 }
 @media(max-width:600px) {
+    div .hourly-weather-info-buttons{
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+    }
     section .hourly-info-section-container{
         padding: 10px;
+    }
+    .hourly-weather-info-buttons div:nth-child(2) p{
+        display: none;
+    }
+    .hourly-weather-info-buttons div:nth-child(3) img:nth-child(2){
+        display: none;
+    }
+    .hourly-weather-info-buttons div .wind-icon{
+        display: none;
+    }
+    .hourly-weather-info-buttons div .wind-text{
+        display: none;
     }
 }
 .hourly-info-section-container{

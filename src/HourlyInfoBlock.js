@@ -47,10 +47,10 @@ export default function HourlyInfoBlock(props){
                         <p>{props.dataObject.forecast.forecastday[0].hour[index].condition.text}</p>
                     </div>
                     <div>
-                        <img src={rainIcon}></img>
+                        <img clasname="rain-icon" src={rainIcon}></img>
                         <p>{props.dataObject.forecast.forecastday[0].hour[index].chance_of_rain}%</p>
-                        <img src={windIcon}></img>
-                        <p>{props.dataObject.forecast.forecastday[0].hour[index].wind_dir} {props.dataObject.forecast.forecastday[0].hour[hour].gust_mph} mph</p>
+                        <img className="wind-icon" src={windIcon}></img>
+                        <p className="wind-text">{props.dataObject.forecast.forecastday[0].hour[index].wind_dir} {props.dataObject.forecast.forecastday[0].hour[hour].gust_mph} mph</p>
                         <img></img>
                     </div>
                 </div>
