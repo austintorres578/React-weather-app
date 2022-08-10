@@ -3020,7 +3020,7 @@ export default function App(props){
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element=
+                <Route index="/" element=
                     {<HomePage 
                         recievedData={recievedData}
                         defaultZip={defaultZip}
