@@ -1,5 +1,7 @@
 import React from "react";
+import Footer from "./Footer";
 import HourlyInfoSection from "./HourlyInfoSection";
+import MobileFooter from "./MobileFooter";
 import NavBar from "./NavBar";
 
 export default function HourlyInfoPage(props){
@@ -18,6 +20,8 @@ export default function HourlyInfoPage(props){
                 changeZip={props.setDefaultZip}
                 searchZip={props.getData}
             />
+            <Footer />
+            <MobileFooter />
         </section>
     )
 }

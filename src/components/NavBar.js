@@ -28,7 +28,7 @@ export default function NavBar(props){
     return(
             <nav id="nav" className="nav-bar-container">
                 <div className="page-selector">
-                    <p>Clone only supports hourly and 3 day weather</p>
+                    <p>API Data Only supported on Hourly and 3 Day pages</p>
                     <div>
                         <ul>
                             <Link to="/"><li>Home</li></Link>
@@ -38,8 +38,8 @@ export default function NavBar(props){
                 </div>
                 <div className="top-nav">
                     <div className="site-banner">
-                        <Link to="/"><img src={siteBannerNightDesk}></img></Link>
-                        <Link to="/"><img src={siteBannerNightMobile}></img></Link>
+                        <Link to="/"><img className="desk-site-logo" src={siteBannerNightDesk}></img></Link>
+                        <Link to="/"><img className="mobile-site-logo" src={siteBannerNightMobile}></img></Link>
                     </div>
                     <div className="zip-search-container">
                         <form onSubmit={search}>
@@ -51,7 +51,7 @@ export default function NavBar(props){
                         <img src={tempIconNight}></img>
                         <img src={premiumIcon}></img>
                         <img src={accountIcon}></img>
-                        <img onClick={test} src={hamMenu}></img>
+                        <img className="ham-button" onClick={test} src={hamMenu}></img>
                     </div>
                 </div>
                 {toggleHam ? <HamSubMenu /> : <div></div>}

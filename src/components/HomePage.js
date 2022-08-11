@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import Footer from "./Footer";
 import InfoSection from "./InfoSection";
+import MobileFooter from "./MobileFooter";
 import NavBar from "./NavBar";
 
 export default function HomePage(props){
@@ -21,6 +23,8 @@ export default function HomePage(props){
                 dataObject={props.recievedData}
                 currentHour={dt.getHours()}
             />
+            <Footer />
+            <MobileFooter />
         </div>
     )
 }

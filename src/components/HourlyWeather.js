@@ -33,9 +33,11 @@ export default function HourlyWeather(props){
     return(
         <section className="hourly-weather-container">
             <div className="hourly-weather-header">
-                <p>Hourly Weather</p>
-                <p>{props.dataObject.location.name}, {props.dataObject.location.region}</p>
-                <p>As of {timeChecker(Number(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length-3)),0)} Local Time</p>
+                <div>
+                    <p>Hourly Weather</p>
+                    <p className="hourly-location">{props.dataObject.location.name}, {props.dataObject.location.region}</p>
+                </div>
+                <p className="hourly-local-time">As of {timeChecker(Number(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length-3)),0)} Local Time</p>
             </div>
             <HourlyInfoBlock 
                 dataObject={props.dataObject}
