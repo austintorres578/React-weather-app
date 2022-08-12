@@ -2994,6 +2994,7 @@ export default function App(props){
         fetch(`https://api.weatherapi.com/v1/forecast.json?key=b28574dd6599479e944222901212812&q=${zip}&days=3&`)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             if(data["error"]===undefined){
                 setRecievedData(data)
                 localStorage.setItem("savedZip",zip)
