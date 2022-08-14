@@ -6,6 +6,8 @@ export default function DailyForecast(props){
 
     let day = new Date();
 
+
+
     function dayChecker(date){
         console.log(date)
 
@@ -53,7 +55,7 @@ export default function DailyForecast(props){
                     </div>
                 </div>
                 <div>
-                    <p className="day">{dayChecker(day.getDate()+1)}</p>
+                    <p className="day">{dayChecker(day.getDay()+1)}</p>
                     <p className="day-high">{`${props.dataObject.forecast.forecastday[1].day.maxtemp_f}`}°</p>
                     <p className="day-low">{`${props.dataObject.forecast.forecastday[1].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[1].day.condition.icon}></img>
@@ -63,7 +65,7 @@ export default function DailyForecast(props){
                     </div>
                 </div>
                 <div>
-                    <p className="day">{dayChecker(day.getDate()+2)}</p>
+                    <p className="day">{dayChecker(day.getDay()+2)}</p>
                     <p className="day-high">{`${props.dataObject.forecast.forecastday[2].day.maxtemp_f}`}°</p>
                     <p className="day-low">{`${props.dataObject.forecast.forecastday[2].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[2].day.condition.icon}></img>

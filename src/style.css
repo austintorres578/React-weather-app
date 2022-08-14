@@ -358,7 +358,7 @@ div .zip-search-container form input{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -441,7 +441,8 @@ div .zip-search-container form input{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
     padding-top: 10px;
     height: 45px;
     margin-bottom: 10px;
@@ -486,7 +487,7 @@ div .zip-search-container form input{
     font-size:20px;
 }
 .next-hours-button-container{
-    text-align: center;
+    text-align: left;
 }
 .next-hours-button-container button{
     background-color: blue;
@@ -521,7 +522,8 @@ div .zip-search-container form input{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
     padding-top: 10px;
     padding-bottom: 10px;
     height: 45px
@@ -616,7 +618,8 @@ div .zip-search-container form input{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
     height: 45px;
     margin-bottom: 10px;
 }
@@ -656,7 +659,7 @@ div .zip-search-container form input{
     font-size: 20px;
 }
 .hourly-button-container{
-    text-align: center;
+    text-align: left;
 }
 .hourly-button-container button{
     background-color: blue;
@@ -700,7 +703,8 @@ div .zip-search-container form input{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
+    font-weight: bold;
     height: 45px;
     margin-bottom: 10px;
 }
@@ -737,7 +741,7 @@ div .zip-search-container form input{
     font-size: 20px;
 }
 .daily-forecast-button-container{
-    text-align: center;
+    text-align: left;
 }
 .daily-forecast-button-container button{
     background-color: blue;
@@ -749,32 +753,7 @@ div .zip-search-container form input{
     height: 35px;
     width: 125px;
 }
-@media(max-width:740px){
-    section .hourly-weather-container{
-        margin-bottom: 90px;
-    }
-}
-@media(max-width:720px){
-    .hourly-weather-header div{
-        display: flex;
-        align-items: center;
-    }
-    .hourly-weather-header div p:nth-child(1){
-        font-size: 20px;
-        margin-right: 10px;
-        
-    }
-    .hourly-weather-header div p:nth-child(2){
-        font-size: 15px;
-        margin-top: 8px;
-    }
-    .hourly-local-time{
-        text-align: left;
-        font-size: 15px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-    }
-}
+
 @media(max-width:600px) {
     div .hourly-weather-info-buttons{
         display: flex;
@@ -796,6 +775,29 @@ div .zip-search-container form input{
     .hourly-weather-info-buttons div .wind-text{
         display: none;
     }
+}
+.hourly-weather-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.hourly-weather-header div{
+    display: flex;
+    align-items: center;
+}
+.hourly-weather-header div p:nth-child(1){
+    font-size: 20px;
+    margin-right: 10px;
+    
+}
+.hourly-weather-header div p:nth-child(2){
+    font-size: 15px;
+    margin-top: 8px;
+}
+.hourly-local-time{
+    text-align: left;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
 .hourly-info-section-container{
     padding: 50px;
