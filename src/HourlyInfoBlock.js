@@ -40,18 +40,21 @@ export default function HourlyInfoBlock(props){
                 <div className="hourly-weather-info-buttons">
                     <div>
                         <p>{timeChecker(Number(props.dataObject.forecast.forecastday[0].hour[index].time.slice(11,props.dataObject.forecast.forecastday[0].hour[hour].time.length-3)),0)}</p>
-                        <p>{props.dataObject.forecast.forecastday[0].hour[index].temp_f}°</p>
                     </div>
                     <div>
-                        <img src={props.dataObject.forecast.forecastday[0].hour[index].condition.icon}></img>
+                        <p className="hourly-block-temp">{props.dataObject.forecast.forecastday[0].hour[index].temp_f}°</p>
+                    </div>
+                    <div>
+                        <img className="weather-icon" src={props.dataObject.forecast.forecastday[0].hour[index].condition.icon}></img>
                         <p>{props.dataObject.forecast.forecastday[0].hour[index].condition.text}</p>
                     </div>
                     <div>
-                        <img clasname="rain-icon" src={rainIcon}></img>
+                        <img className="rain-icon" src={rainIcon}></img>
                         <p>{props.dataObject.forecast.forecastday[0].hour[index].chance_of_rain}%</p>
+                    </div>
+                    <div>
                         <img className="wind-icon" src={windIcon}></img>
                         <p className="wind-text">{props.dataObject.forecast.forecastday[0].hour[index].wind_dir} {props.dataObject.forecast.forecastday[0].hour[hour].gust_mph} mph</p>
-                        <img></img>
                     </div>
                 </div>
                 )

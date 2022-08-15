@@ -346,7 +346,7 @@ div .zip-search-container form input{
     
     }
 }
-.temperture-block-container{;
+.temperture-block-container{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #393363;
@@ -631,8 +631,20 @@ div .zip-search-container form input{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     text-align: center;
+    width: 100%;
     margin-bottom: 20px;
     padding-bottom: 20px;
+}
+.hourly-time-blocks div:nth-child(1){
+    border-right: solid 1px lightgray;
+}
+
+.hourly-time-blocks div:nth-child(3){
+    border-left: solid 1px lightgray;
+    border-right: solid 1px lightgray;
+}
+.hourly-time-blocks div:nth-child(5){
+    border-left: solid 1px lightgray;
 }
 
 .hourly-header{
@@ -644,6 +656,10 @@ div .zip-search-container form input{
     font-size: 35px;
     color: blue;
 }
+.hourly-block-temp{
+    font-weight: bold;
+    font-size: 18px;
+}
 .rain-percent-container{
     display: flex;
     justify-content: center;
@@ -651,6 +667,20 @@ div .zip-search-container form input{
 }
 .rain-percent-container img{
     height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
+.weather-icon{
+    height: 50px;
+    width: auto;
+}
+.rain-icon{
+    height: 15px;
+    margin-right: 5px;
+    width: auto;
+}
+.wind-icon{
+    height: 20px;
     width: auto;
     margin-right: 5px;
 }
@@ -754,28 +784,7 @@ div .zip-search-container form input{
     width: 125px;
 }
 
-@media(max-width:600px) {
-    div .hourly-weather-info-buttons{
-        display: flex;
-        text-align: center;
-        justify-content: space-between;
-    }
-    section .hourly-info-section-container{
-        padding: 10px;
-    }
-    .hourly-weather-info-buttons div:nth-child(2) p{
-        display: none;
-    }
-    .hourly-weather-info-buttons div:nth-child(3) img:nth-child(2){
-        display: none;
-    }
-    .hourly-weather-info-buttons div .wind-icon{
-        display: none;
-    }
-    .hourly-weather-info-buttons div .wind-text{
-        display: none;
-    }
-}
+
 .hourly-weather-header{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -807,7 +816,7 @@ div .zip-search-container form input{
     padding: 0px 20px 20px 20px;
     border-radius: 10px;
     background-color: white;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 .hourly-weather-header{
     text-align: center;
@@ -828,40 +837,14 @@ div .zip-search-container form input{
 }
 .hourly-weather-info-buttons{
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     justify-content: space-between;
 }
 .hourly-weather-info-buttons div{
     display: flex;
     align-items: center;
 }
-.hourly-weather-info-buttons div:nth-child(1) p{
-    margin-right: 10px;
-}
-.hourly-weather-info-buttons div:nth-child(1) p:nth-child(2){
-    font-weight: bold;
-    font-size: 22px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-.hourly-weather-info-buttons div:nth-child(2) img{
-    margin-right: 10px;
-}
-.hourly-weather-info-buttons div:nth-child(1) img{
-    height: 50px;
-    width: auto;
-}
-.hourly-weather-info-buttons div:nth-child(2) p{
-    margin-right: 10px;
-}
-.hourly-weather-info-buttons div:nth-child(3) p{
-    margin-right: 10px;
-}
-.hourly-weather-info-buttons div:nth-child(3) img{
-    margin-right: 10px;
-    height: 20px;
-    width: auto;
-}
+
 .hourly-info-block-date{
     font-weight: bold;
     font-size: 20px;
