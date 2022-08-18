@@ -20,7 +20,7 @@ export default function NavBar(props){
 
     }
 
-    function test(){
+    function ham(){
         toggleHam ? setToggleHam(false) : setToggleHam(true);
         console.log(toggleHam)
     }
@@ -51,7 +51,7 @@ export default function NavBar(props){
                         <img src={tempIconNight}></img>
                         <img src={premiumIcon}></img>
                         <img src={accountIcon}></img>
-                        <img className="ham-button" onClick={test} src={hamMenu}></img>
+                        <img className="ham-button" onClick={ham} src={hamMenu}></img>
                     </div>
                 </div>
                 {toggleHam ? <HamSubMenu /> : <div></div>}

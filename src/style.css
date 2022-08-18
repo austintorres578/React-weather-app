@@ -592,15 +592,14 @@ div .zip-search-container form input{
     .hourly-section-container .hourly-time-blocks div{
         margin-right: 30px;
     }
-    .hourly-section-container .hourly-time-blocks div:nth-child(2){
-        border-left: none;
-        border-right: none;
+    .hourly-section-container .hourly-time-blocks div:nth-child(1){
+        border: none;
     }
     .hourly-section-container .hourly-time-blocks div:nth-child(3){
-        border-right: none;
+        border: none;
     }
-    .hourly-section-container .hourly-time-blocks div:nth-child(4){
-        border-right: none;
+    .hourly-section-container .hourly-time-blocks div:nth-child(5){
+        border: none;
     }
 }
 
@@ -659,6 +658,10 @@ div .zip-search-container form input{
 .hourly-block-temp{
     font-weight: bold;
     font-size: 18px;
+}
+.hourly-block-drop-arrow{
+    height: 8px;
+    width: auto;
 }
 .rain-percent-container{
     display: flex;
@@ -808,6 +811,12 @@ div .zip-search-container form input{
     margin-top: 5px;
     margin-bottom: 10px;
 }
+@media(max-width:665px){
+    section .hourly-info-section-container{
+        padding: 10px;
+        margin-bottom: 75px;
+    }
+}
 .hourly-info-section-container{
     padding: 50px;
 }
@@ -835,14 +844,97 @@ div .zip-search-container form input{
     margin: 5px 0px 0px 0px;
     font-size: 18px;
 }
-.hourly-weather-info-buttons{
+.top-hourly-block{
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: 20% 10% 25% 20% 20% 5%;
     justify-content: space-between;
+    padding-left: 5px;
+    transition: .5s;
+    cursor: pointer;
 }
-.hourly-weather-info-buttons div{
+
+.top-hourly-block div{
     display: flex;
+    justify-content: left;
     align-items: center;
+    pointer-events: none;
+}
+.bottom-hourly-block{
+    border: solid 2px lightgray;
+    border-radius: 10px;
+}
+
+.bottom-hourly-block div{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-hourly-block div div{
+    display: flex;
+    margin-right: 5px;
+}
+
+@media(max-width:715px){
+    div .top-hourly-block{
+        grid-template-columns: 20% 15% 40% 20% 5%;
+    }
+    div .hourly-wind{
+        display: none;
+    }
+}
+@media(max-width:550px){
+    .bottom-hourly-block div{
+        grid-template-columns: 50% 50%;
+        font-size: 14px;
+    }
+    .bottom-hourly-block div img{
+        height: 20px;
+        width: auto;
+    }
+}
+@media(max-width:475px){
+    div .top-hourly-block{
+        grid-template-columns: 30% 20% 20% 25% 5%;
+    }
+    .weather-text{
+        display: none;
+    }
+}
+.hourly-block-stat{
+    font-weight: bold;
+    color: blue;
+}
+
+.hourly-block-wind-icon{
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+}
+.hourly-block-rain-icon{
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+}
+.hourly-block-feel-icon{
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+}
+.hourly-block-humidity-icon{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
+.hourly-block-uv-icon{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
+.hourly-block-cloud-icon{
+    height: 30px;
+    width: auto;
+    margin-right: 5px;
 }
 
 .hourly-info-block-date{
