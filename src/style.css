@@ -26,6 +26,12 @@ body{
         grid-template-columns: 30% 40% 30%;
     }
 }
+@media(max-width:450px){
+    div .top-nav{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 .page-selector{
     background-color: red;
 }
@@ -328,22 +334,19 @@ div .zip-search-container form input{
     background-color: #494363;
 }
 @media(max-width:500px){
-    .temperture-block-container .temperture{
-        flex-direction: column-reverse;
-    }
-    .big-weather{
-        text-align: center;
-    }
-    .weather-type{
-        text-align: center;
-    }
-    .day-night{
-        text-align: center;
-    }
     .temperture .weather-image img{
-        height: 200px;
+        height: 120px;
         width: auto;
     
+    }
+    div .big-weather{
+        font-size: 50px;
+    }
+    div .weather-type{
+        font-size: 18px;
+    }
+    div .day-night{
+        font-size: 18px
     }
 }
 .temperture-block-container{
@@ -366,6 +369,12 @@ div .zip-search-container form input{
     height: 45px;
     background-color: #100f1f9f;
     border-radius: 10px 10px 0px 0px;
+}
+.weather-type{
+    font-weight: bold;
+}
+.day-night{
+    font-weight: bold;
 }
 .temperture-location p{
     font-size: 20px;
