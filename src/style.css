@@ -524,6 +524,11 @@ div .zip-search-container form input{
         margin-bottom: 75px;
     }
 }
+@media(min-width:600px){
+    section .mobile-weather-combo-container{
+        display: none;
+    }
+}
 .info-section-container{
     padding: 50px;
 }
