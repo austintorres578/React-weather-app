@@ -391,9 +391,137 @@ div .zip-search-container form input{
     padding-right: 20px;
     padding-bottom: 10px;
 }
+#mobile-combo-temp{
+    color:blue;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px;
+}
+.mobile-combo-temp{
+    color: blue;
+    font-size: 14px;
+    margin: 0px;
+}
+.mobile-weather-combo-container{
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px
+}
+.mobile-weather-combo-header{
+    padding-top: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.mobile-weather-combo-header p{
+    font-weight: bold;
+    margin: 0px;
+}
+.mobile-weather-combo-buttons-container{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mobile-weather-combo-buttons-container div{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+.mobile-weather-combo-buttons-container div{
+    border: solid 1px lightgray;
+    margin-bottom: 10px;
+}
+.mobile-weather-combo-buttons-container div button{
+    border: none;
+    width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 12px;
+}
+.mobile-time-combo{
+    justify-content: space-evenly;
+}
+.mobile-time-combo div{
+    text-align: center;
+}
+
+.mobile-combo-today-button{
+    background-color: blue;
+    color: white;
+}
+.mobile-combo-hourly-button{
+    background-color: white;
+    color: blue;
+}
+.mobile-combo-daily-button{
+    background-color: white;
+    color: blue;
+}
+
+.mobile-time-combo div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-time-combo div div img{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
+.mobile-hourly-combo{
+    justify-content: space-around;
+}
+.mobile-hourly-combo div{
+    text-align: center;
+    margin-right: 5px;
+}
+.mobile-hourly-combo div p{
+    font-size: 14px;
+}
+
+.mobile-hourly-combo div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobile-hourly-combo div div img{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
+.mobile-daily-combo{
+    justify-content: space-evenly;
+}
+.mobile-daily-combo div{
+    text-align: center;
+}
+
+.mobile-daily-combo div div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mobile-daily-combo div div img{
+    height: 15px;
+    width: auto;
+    margin-right: 5px;
+}
 @media(max-width:600px) {
     .home-page .info-section-container{
         padding: 10px;
+    }
+    section #today-forecast{
+        display: none;
+    }
+    section .hourly-section-container{
+        display: none;
+    }
+    section #daily-forecast{
+        display: none;
+    }
+    section .weather-stats-container{
+        margin-bottom: 75px;
     }
 }
 .info-section-container{
