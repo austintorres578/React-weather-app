@@ -45,10 +45,12 @@ export default function HourlyInfoBlock(props){
         function toggleSub(event){
             if(event.target.nextElementSibling.style.display==="none"){
                 event.target.nextElementSibling.style.display="block"
+                event.target.style.borderBottom="none"
                 event.target.children[5].children[0].style.transform="scaleY(-1)"
             }
             else if(event.target.nextElementSibling.style.display==="block"){
                 event.target.nextElementSibling.style.display="none"
+                event.target.style.borderBottom="solid 1px lightgray"
                 event.target.children[5].children[0].style.transform="scaleY(1)"
             }
 
@@ -62,7 +64,7 @@ export default function HourlyInfoBlock(props){
             for (let index = num; index < props.dataObject.forecast.forecastday[0].hour.length; index++) {
                 result.push(
                 <div className="hourly-weather-info-buttons">
-                    <div onClick={toggleSub} className="top-hourly-block">
+                    <div style={{borderBottom:"solid 1px lightgray"}} onClick={toggleSub} className="top-hourly-block">
                         <div>
                             <p>{timeChecker(Number(props.dataObject.forecast.forecastday[0].hour[index].time.slice(11,props.dataObject.forecast.forecastday[0].hour[hour].time.length-3)),0)}</p>
                         </div>

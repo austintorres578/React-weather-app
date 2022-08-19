@@ -28,7 +28,7 @@ export default function NavBar(props){
     return(
             <nav id="nav" className="nav-bar-container">
                 <div className="page-selector">
-                    <p>API Data Only supported on Hourly and 3 Day pages</p>
+                    <p>API Data only support Home and 3 Day pages</p>
                     <div>
                         <ul>
                             <Link to="/"><li>Home</li></Link>

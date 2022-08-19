@@ -393,7 +393,6 @@ div .zip-search-container form input{
 }
 #mobile-combo-temp{
     color:blue;
-    font-weight: bold;
     font-size: 18px;
     margin: 0px;
 }
@@ -443,7 +442,12 @@ div .zip-search-container form input{
     justify-content: space-evenly;
 }
 .mobile-time-combo div{
+    width: 100%;
     text-align: center;
+}
+.mobile-combo-header{
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .mobile-combo-today-button{
@@ -469,12 +473,15 @@ div .zip-search-container form input{
     width: auto;
     margin-right: 5px;
 }
+.mobile-time-combo div div p{
+    margin: 0px;
+}
 .mobile-hourly-combo{
     justify-content: space-around;
 }
 .mobile-hourly-combo div{
+    width: 100%;
     text-align: center;
-    margin-right: 5px;
 }
 .mobile-hourly-combo div p{
     font-size: 14px;
@@ -490,22 +497,29 @@ div .zip-search-container form input{
     width: auto;
     margin-right: 5px;
 }
+.mobile-hourly-combo div div p{
+    margin: 0px;
+}
 .mobile-daily-combo{
     justify-content: space-evenly;
 }
 .mobile-daily-combo div{
+    width: 100%;
     text-align: center;
 }
 
 .mobile-daily-combo div div{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .mobile-daily-combo div div img{
     height: 15px;
     width: auto;
     margin-right: 5px;
+}
+.mobile-daily-combo div div p{
+    margin: 0px;
 }
 @media(max-width:600px) {
     .home-page .info-section-container{
@@ -536,6 +550,7 @@ div .zip-search-container form input{
     margin: 5px 0px 0px 0px;
     color: white;
     font-size: 90px;
+    font-weight: bold;
 }
 .weather-type{
     color: white;

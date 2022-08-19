@@ -128,7 +128,7 @@ export default function MobileWeatherCombo(props){
             </div>
             <div style={{display:"flex"}} className="mobile-time-combo">
                 <div>
-                    <p>Morning</p>
+                    <p className="mobile-combo-header">Morning</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].hour[7].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[7].condition.icon}`}></img>
                     <div>
@@ -136,8 +136,8 @@ export default function MobileWeatherCombo(props){
                         <p>{props.dataObject.forecast.forecastday[0].hour[7].chance_of_rain}%</p>
                     </div>
                 </div>
-                <div>
-                    <p>Afternoon</p>
+                <div style={{borderLeft:"solid 1px lightgray", borderRight:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">Afternoon</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].hour[14].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[14].condition.icon}`}></img>
                     <div>
@@ -145,8 +145,8 @@ export default function MobileWeatherCombo(props){
                         <p>{props.dataObject.forecast.forecastday[0].hour[14].chance_of_rain}%</p>
                     </div>
                 </div>
-                <div>
-                    <p>Evening</p>
+                <div style={{borderRight:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">Evening</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].hour[18].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[18].condition.icon}`}></img>
                     <div>
@@ -155,7 +155,7 @@ export default function MobileWeatherCombo(props){
                     </div>
                 </div>
                 <div>
-                    <p>Overnight</p>
+                    <p className="mobile-combo-header">Overnight</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].hour[22].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[22].condition.icon}`}></img>
                     <div>
@@ -166,16 +166,16 @@ export default function MobileWeatherCombo(props){
             </div>
             <div style={{display:"none"}} className="mobile-hourly-combo">
                 <div>
-                    <p>Now</p>
-                    <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].temp_f}`}°</p>
+                    <p className="mobile-combo-header"><strong>Now</strong></p>
+                    <p id="mobile-combo-temp"><strong>{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].temp_f}`}°</strong></p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[hour].condition.icon}`}></img>
                     <div>
                         <img src={rainIcon}></img>
-                        <p>{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].chance_of_rain}`}%</p>
+                        <p><strong>{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].chance_of_rain}`}%</strong></p>
                     </div>
                 </div>
-                <div>
-                    <p>{timeChecker(hour,1)}</p>
+                <div style={{borderLeft:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">{timeChecker(hour,1)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].condition.icon}`}></img>
                     <div>
@@ -183,8 +183,8 @@ export default function MobileWeatherCombo(props){
                         <p>{`${props.dataObject.forecast.forecastday[dayChange(hour+1)].hour[numberReset(hour+1)].chance_of_rain}`}%</p>
                     </div>
                 </div>
-                <div>
-                    <p>{timeChecker(hour,2)}</p>
+                <div style={{borderLeft:"solid 1px lightgray",borderRight:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">{timeChecker(hour,2)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].condition.icon}`}></img>
                     <div>
@@ -192,8 +192,8 @@ export default function MobileWeatherCombo(props){
                         <p>{`${props.dataObject.forecast.forecastday[dayChange(hour+2)].hour[numberReset(hour+2)].chance_of_rain}`}%</p>
                     </div>
                 </div>
-                <div>
-                    <p>{timeChecker(hour,3)}</p>
+                <div style={{borderRight:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">{timeChecker(hour,3)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+3)].hour[numberReset(hour+3)].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+3)].hour[numberReset(hour+3)].condition.icon}`}></img>
                     <div>
@@ -202,7 +202,7 @@ export default function MobileWeatherCombo(props){
                     </div>
                 </div>
                 <div>
-                    <p>{timeChecker(hour,4)}</p>
+                    <p className="mobile-combo-header">{timeChecker(hour,4)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour+4)].hour[numberReset(hour+4)].temp_f}`}°</p>
                     <img src={`${props.dataObject.forecast.forecastday[dayChange(hour+4)].hour[numberReset(hour+4)].condition.icon}`}></img>
                     <div>
@@ -213,17 +213,17 @@ export default function MobileWeatherCombo(props){
             </div>
             <div style={{display:"none"}} className="mobile-daily-combo">
                 <div>
-                    <p>Today</p>
-                    <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].day.maxtemp_f}`}°</p>
+                    <p className="mobile-combo-header"><strong>Today</strong></p>
+                    <p id="mobile-combo-temp"><strong>{`${props.dataObject.forecast.forecastday[0].day.maxtemp_f}`}°</strong></p>
                     <p className="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[0].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[0].day.condition.icon}></img>
                     <div>
                         <img src={rainIcon}></img>
-                        <p>{`${props.dataObject.forecast.forecastday[0].day.daily_chance_of_rain}`}%</p>
+                        <p><strong>{`${props.dataObject.forecast.forecastday[0].day.daily_chance_of_rain}`}%</strong></p>
                     </div>
                 </div>
-                <div>
-                    <p>{dayChecker(day.getDay()+1)}</p>
+                <div style={{borderLeft:"solid 1px lightgray",borderRight:"solid 1px lightgray"}}>
+                    <p className="mobile-combo-header">{dayChecker(day.getDay()+1)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[1].day.maxtemp_f}`}°</p>
                     <p className="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[1].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[1].day.condition.icon}></img>
@@ -233,7 +233,7 @@ export default function MobileWeatherCombo(props){
                     </div>
                 </div>
                 <div>
-                    <p>{dayChecker(day.getDay()+2)}</p>
+                    <p className="mobile-combo-header">{dayChecker(day.getDay()+2)}</p>
                     <p id="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[2].day.maxtemp_f}`}°</p>
                     <p className="mobile-combo-temp">{`${props.dataObject.forecast.forecastday[2].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[2].day.condition.icon}></img>

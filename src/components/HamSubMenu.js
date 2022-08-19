@@ -8,13 +8,13 @@ export default function HamSubMenu(){
         
     
 
-    function test(event){
-
-        console.log(event.target.children[1].style)
+    function toggleDrop(event){
         if(event.target.children[1].style.display==="none"){
         event.target.children[1].style.display="block"
+        event.target.children[0].children[1].style.transform="scaleY(-1)"
         }else{
             event.target.children[1].style.display="none"
+            event.target.children[0].children[1].style.transform="scaleY(1)"
         }
 
     }
@@ -119,7 +119,7 @@ export default function HamSubMenu(){
                     <div>
                         <p>Home</p>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Account</p>
                             <img src={dropDown}></img>
@@ -132,7 +132,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Weather</p>
                             <img src={dropDown}></img>
@@ -151,7 +151,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Maps</p>
                             <img src={dropDown}></img>
@@ -165,7 +165,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Severe</p>
                             <img src={dropDown}></img>
@@ -178,7 +178,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Video {"&"} Photos</p>
                             <img src={dropDown}></img>
@@ -191,7 +191,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>Health</p>
                             <img src={dropDown}></img>
@@ -206,7 +206,7 @@ export default function HamSubMenu(){
                             </ul>
                         </div>
                     </div>
-                    <div onClick={test} className="drop-menu">
+                    <div onClick={toggleDrop} className="drop-menu">
                         <div>
                             <p>TV</p>
                             <img src={dropDown}></img>

@@ -45,13 +45,13 @@ export default function DailyForecast(props){
             </div>
             <div className="daily-blocks">
                 <div>
-                    <p className="day">Today</p>
-                    <p className="day-high">{`${props.dataObject.forecast.forecastday[0].day.maxtemp_f}`}°</p>
+                    <p className="day"><strong>Today</strong></p>
+                    <p className="day-high"><strong>{`${props.dataObject.forecast.forecastday[0].day.maxtemp_f}`}°</strong></p>
                     <p className="day-low">{`${props.dataObject.forecast.forecastday[0].day.mintemp_f}`}°</p>
                     <img src={props.dataObject.forecast.forecastday[0].day.condition.icon}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[0].day.daily_chance_of_rain}`}%</p>
+                        <p className="rain-percent"><strong>{`${props.dataObject.forecast.forecastday[0].day.daily_chance_of_rain}`}%</strong></p>
                     </div>
                 </div>
                 <div>

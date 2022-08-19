@@ -50,7 +50,7 @@ export default function TempertureBlock(props){
     return(
         <section style={{backgroundImage:`url(${backgroundAssigner(hourNum)})`}} className="temperture-block-container">
             <div className="temperture-location">
-                <p>{`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`} As of {hour}</p>
+                <p><strong>{`${props.dataObject.location.name}`}, {`${props.dataObject.location.region}`}</strong> As of {hour}</p>
             </div>
             <div className="temperture">
                 <div>

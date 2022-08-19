@@ -60,12 +60,12 @@ export default function HourlySection(props){
             </div>
             <div className="hourly-time-blocks">
                 <div>
-                    <p className="hourly-header">Now</p>
-                    <p className="hourly-temp">{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].temp_f}`}°</p>
+                    <p className="hourly-header"><strong>Now</strong></p>
+                    <p className="hourly-temp"><strong>{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].temp_f}`}°</strong></p>
                     <img src={`${props.dataObject.forecast.forecastday[0].hour[hour].condition.icon}`}></img>
                     <div className="rain-percent-container">
                         <img src={rainIcon}></img>
-                        <p className="rain-percent">{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].chance_of_rain}`}%</p>
+                        <p className="rain-percent"><strong>{`${props.dataObject.forecast.forecastday[dayChange(hour)].hour[hour].chance_of_rain}`}%</strong></p>
                     </div>
                 </div>
                 <div>
