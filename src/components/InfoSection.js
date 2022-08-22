@@ -8,10 +8,8 @@ import WeatherStats from "./WeatherStats";
 
 export default function InfoSection(props){
 
-    
-
     return(
-        <section className="info-section-container">
+        <section style={{backgroundColor:`${props.navColor.page.backgroundColor}`}} className="info-section-container">
             <TempertureBlock 
                 dataObject={props.dataObject}
             />

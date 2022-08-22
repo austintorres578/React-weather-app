@@ -2977,12 +2977,70 @@ export default function App(props){
             ]
         }
     }
-
+    let placeholderNavColor ={
+        topNav:{
+            backgroundColor:"#005986",
+            inputBackgroundColor:"#337a9e",
+        },
+        middleNav:{
+            backgroundColor:"#337a9e"
+        },
+        bottomNav:{
+            backgroundColor:"#003550"
+        },
+        page:{
+            backgroundColor:"#95ccd8"
+        }
+    }
+    let dayNavColor ={
+        topNav:{
+            backgroundColor:"#005986",
+            inputBackgroundColor:"#337a9e",
+        },
+        middleNav:{
+            backgroundColor:"#337a9e"
+        },
+        bottomNav:{
+            backgroundColor:"#003550"
+        },
+        page:{
+            backgroundColor:"#95ccd8"
+        }
+    }
+    let eveningNavColor ={
+        topNav:{
+            backgroundColor:"#722435",
+            inputBackgroundColor:"#8e505d",
+        },
+        middleNav:{
+            backgroundColor:"#8e505d"
+        },
+        bottomNav:{
+            backgroundColor:"#441620"
+        },
+        page:{
+            backgroundColor:"rgb(92 54 62)"
+        }
+    }
+    let nightNavColor ={
+        topNav:{
+            backgroundColor:"#313050",
+            inputBackgroundColor:"#5a5973",
+        },
+        middleNav:{
+            backgroundColor:"#5a5973"
+        },
+        bottomNav:{
+            backgroundColor:"#1d1d30"
+        },
+        page:{
+            backgroundColor:"#494363"
+        }
+    }
     const [recievedData, setRecievedData] = useState(placeholderLocation)
 
     const [defaultZip, setDefaultZip] = useState(savedZip)
-
-    console.log(savedZip)
+    const [navColor, setNavColor] = useState(placeholderNavColor)
 
     if(savedZip===null){
         localStorage.setItem("savedZip","89101")
@@ -2995,6 +3053,15 @@ export default function App(props){
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
+            console.log(data.current.last_updated.slice(11,data.current.last_updated.length-3))
+            if(Number(data.current.last_updated.slice(11,data.current.last_updated.length-3))>6&&Number(data.current.last_updated.slice(11,data.current.last_updated.length-3))<17){
+                setNavColor(dayNavColor)
+            }else if(Number(data.current.last_updated.slice(11,data.current.last_updated.length-3))>17&&Number(data.current.last_updated.slice(11,data.current.last_updated.length-3))<23){
+                setNavColor(eveningNavColor)
+            }
+            else{
+                setNavColor(nightNavColor)
+            }
             if(data["error"]===undefined){
                 setRecievedData(data)
                 localStorage.setItem("savedZip",zip)
@@ -3027,6 +3094,7 @@ export default function App(props){
                         defaultZip={defaultZip}
                         setDefaultZip={setDefaultZip}
                         getData={getData}
+                        navColor={navColor}
                     />} 
                 />
                 <Route path="/details" element=
@@ -3035,6 +3103,7 @@ export default function App(props){
                         defaultZip={defaultZip}
                         setDefaultZip={setDefaultZip}
                         getData={getData}
+                        navColor={navColor}
                     />}
                 />
             </Routes>

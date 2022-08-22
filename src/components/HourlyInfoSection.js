@@ -4,7 +4,7 @@ import HourlyWeather from "./HourlyWeather";
 export default function HourlyInfoSection(props){
 
     return(
-        <section className="hourly-info-section-container">
+        <section style={{backgroundColor:`${props.navColor.page.backgroundColor}`}} className="hourly-info-section-container">
             <HourlyWeather 
                 dataObject={props.dataObject}
                 currentZip={props.currentZip}

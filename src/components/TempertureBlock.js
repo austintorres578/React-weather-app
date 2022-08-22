@@ -7,15 +7,11 @@ import EveningBackground from "../images/evening-sky.jpg"
 
 export default function TempertureBlock(props){
 
-    console.log(props.dataObject)
-
     let background
 
     function backgroundAssigner(num){
-        if(num>6 && num <12){
+        if(num>6 && num <17){
             background=MorningBackground
-        }else if(num>12 && num < 17){
-            background=AfternoonBackground
         }else if(num>17&&num<23){
             background=EveningBackground
         }else{
@@ -32,7 +28,6 @@ export default function TempertureBlock(props){
     if(props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length).length===5){
         hour = Number(props.dataObject.current.last_updated.slice(11,13))
         hourNum = Number(props.dataObject.current.last_updated.slice(11,13))
-        console.log(hour)
     }
     if(hour===0){
         hour="12:00 AM"

@@ -6,9 +6,7 @@ import NavBar from "./NavBar";
 
 export default function HomePage(props){
     
-    console.log(props)
-    
-    let dt = new Date();
+    let dt = props.recievedData.current.last_updated.slice(11,props.recievedData.current.last_updated.length -3);
 
     return(
         <div className="home-page">
@@ -17,11 +15,14 @@ export default function HomePage(props){
                 currentZip={props.defaultZip}
                 changeZip={props.setDefaultZip}
                 searchZip={props.getData}
+                navColor={props.navColor}
+                currentHour={Number(dt)}
                 
             />
             <InfoSection 
                 dataObject={props.recievedData}
-                currentHour={dt.getHours()}
+                currentHour={Number(dt)}
+                navColor={props.navColor}
             />
             <Footer />
             <MobileFooter />

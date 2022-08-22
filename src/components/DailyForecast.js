@@ -9,7 +9,6 @@ export default function DailyForecast(props){
 
 
     function dayChecker(date){
-        console.log(date)
 
         if(date>=7){
             date=date-7

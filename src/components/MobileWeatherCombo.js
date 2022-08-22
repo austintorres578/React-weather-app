@@ -11,8 +11,6 @@ export default function MobileWeatherCombo(props){
         if(hour==="00"){
             hour=Number(hour)
         }
-
-        console.log(hour)
     }
 
     function timeChecker (num,x){
@@ -58,7 +56,6 @@ export default function MobileWeatherCombo(props){
 
 
     function dayChecker(date){
-        console.log(date)
 
         if(date>=7){
             date=date-7

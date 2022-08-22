@@ -12,7 +12,6 @@ export default function HourlySection(props){
             hour=Number(hour)
         }
 
-        console.log(hour)
     }
 
     function timeChecker (num,x){
