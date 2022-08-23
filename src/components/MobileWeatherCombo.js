@@ -111,6 +111,7 @@ export default function MobileWeatherCombo(props){
         
     }
 
+    console.log(hour)
     return(
         <section className="mobile-weather-combo-container">
             <div className="mobile-weather-combo-header">

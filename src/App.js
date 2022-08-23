@@ -2989,7 +2989,7 @@ export default function App(props){
             backgroundColor:"#003550"
         },
         page:{
-            backgroundColor:"#95ccd8"
+            backgroundColor:"rgb(139 191 203)"
         }
     }
     let dayNavColor ={
@@ -3004,7 +3004,7 @@ export default function App(props){
             backgroundColor:"#003550"
         },
         page:{
-            backgroundColor:"#95ccd8"
+            backgroundColor:"rgb(139 191 203)"
         }
     }
     let eveningNavColor ={
@@ -3038,6 +3038,7 @@ export default function App(props){
         }
     }
     const [recievedData, setRecievedData] = useState(placeholderLocation)
+    const [recieved,setRecieved]= useState(false)
 
     const [defaultZip, setDefaultZip] = useState(savedZip)
     const [navColor, setNavColor] = useState(placeholderNavColor)
@@ -3064,6 +3065,7 @@ export default function App(props){
             }
             if(data["error"]===undefined){
                 setRecievedData(data)
+                setRecieved(true)
                 localStorage.setItem("savedZip",zip)
             }else{
                 setRecievedData(placeholderLocation)
@@ -3095,6 +3097,7 @@ export default function App(props){
                         setDefaultZip={setDefaultZip}
                         getData={getData}
                         navColor={navColor}
+                        recieved={recieved}
                     />} 
                 />
                 <Route path="/details" element=

@@ -15,6 +15,7 @@ export default function InfoSection(props){
             />
             <TimeOfDay 
                 dataObject={props.dataObject}
+                recieved={props.recieved}
             />
             <MobileWeatherCombo 
                 dataObject={props.dataObject}

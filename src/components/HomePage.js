@@ -23,6 +23,7 @@ export default function HomePage(props){
                 dataObject={props.recievedData}
                 currentHour={Number(dt)}
                 navColor={props.navColor}
+                recieved={props.recieved}
             />
             <Footer />
             <MobileFooter />

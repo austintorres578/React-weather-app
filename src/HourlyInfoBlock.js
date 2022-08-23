@@ -89,7 +89,7 @@ export default function HourlyInfoBlock(props){
                     </div>
                     <div style={hideSub} className="bottom-hourly-block">
                         <div>
-                            <div>
+                            <div className="stat-one">
                                 <div>
                                     <img className="hourly-block-feel-icon" src={feelsLikeIcon}></img>
                                     <p>Feels Like</p>
@@ -98,7 +98,7 @@ export default function HourlyInfoBlock(props){
                                     <p>{props.dataObject.forecast.forecastday[0].hour[index].feelslike_f}°</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="stat-two">
                                 <div>
                                     <img className="hourly-block-wind-icon" src={windIcon}></img>
                                     <p>Wind</p>
@@ -107,7 +107,7 @@ export default function HourlyInfoBlock(props){
                                     <p>{props.dataObject.forecast.forecastday[0].hour[index].gust_mph} mph</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="stat-three">
                                 <div>
                                     <img className="hourly-block-humidity-icon" src={humidity}></img>
                                     <p>Humidity</p>
@@ -116,7 +116,7 @@ export default function HourlyInfoBlock(props){
                                     <p>{props.dataObject.forecast.forecastday[0].hour[index].humidity}%</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="stat-four">
                                 <div>
                                     <img className="hourly-block-uv-icon" src={uv}></img>
                                     <p>UV Index</p>
@@ -125,7 +125,7 @@ export default function HourlyInfoBlock(props){
                                     <p>{props.dataObject.forecast.forecastday[0].hour[index].uv} of 10</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="stat-five">
                                 <div>
                                     <img className="hourly-block-cloud-icon" src={cloudIcon}></img>
                                     <p>Cloud Cover</p>
@@ -134,7 +134,7 @@ export default function HourlyInfoBlock(props){
                                     <p>{props.dataObject.forecast.forecastday[0].hour[index].cloud}%</p>
                                 </div>
                             </div>
-                            <div>
+                            <div className="stat-six">
                                 <div>
                                     <img className="hourly-block-rain-icon" src={rainIcon}></img>
                                     <p>Rain Amount</p>

@@ -540,6 +540,7 @@ div .zip-search-container form input{
     section .weather-stats-container{
         margin-bottom: 75px;
     }
+    
 }
 @media(min-width:600px){
     section .mobile-weather-combo-container{
@@ -1030,8 +1031,12 @@ div .zip-search-container form input{
     align-items: center;
     justify-content: center;
 }
+
 .bottom-hourly-block div div{
     display: flex;
+}
+
+.bottom-hourly-block div div p{
     margin-right: 5px;
 }
 
@@ -1052,6 +1057,9 @@ div .zip-search-container form input{
         height: 20px;
         width: auto;
     }
+    .stat-four{
+        border-bottom: solid 1px lightgray;
+    }
 }
 @media(max-width:475px){
     div .top-hourly-block{
@@ -1064,6 +1072,15 @@ div .zip-search-container form input{
 .hourly-block-stat{
     font-weight: bold;
     color: blue;
+}
+.stat-one{
+    border-bottom: solid 1px lightgray;
+}
+.stat-two{
+    border-bottom: solid 1px lightgray;
+}
+.stat-three{
+    border-bottom: solid 1px lightgray;
 }
 
 .hourly-block-wind-icon{

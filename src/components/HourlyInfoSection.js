@@ -10,6 +10,7 @@ export default function HourlyInfoSection(props){
                 currentZip={props.currentZip}
                 changeZip={props.changeZip}
                 searchZip={props.searchZip}
+                recieved={props.recieved}
             />
         </section>
     )

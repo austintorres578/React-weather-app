@@ -4,6 +4,8 @@ import HourlyInfoBlock from "../HourlyInfoBlock";
 
 export default function HourlyWeather(props){
 
+    let dt = props.dataObject.current.last_updated.slice(11,props.dataObject.current.last_updated.length -3);
+
     function timeChecker (num,x){
         let combinedHour = num + x;
         if(combinedHour===24){
@@ -37,6 +39,8 @@ export default function HourlyWeather(props){
             </div>
             <HourlyInfoBlock 
                 dataObject={props.dataObject}
+                recieved={props.recieved}
+
             />
         </section>
     )
