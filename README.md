@@ -1,7 +1,7 @@
 <h1>Weather Channel Clone</h1>
 
-<p>Live Site</p>
-<a href="https://bejewelled-unicorn-5837be.netlify.app/"></a>
+
+<a href="https://bejewelled-unicorn-5837be.netlify.app/">Live Website</a>
 
 <h2>Purpose</h2>
 <br>
