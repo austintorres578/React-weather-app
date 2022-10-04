@@ -1,5 +1,8 @@
 <h1>Weather Channel Clone</h1>
 
+<p>Live Site</p>
+<a href="https://bejewelled-unicorn-5837be.netlify.app/"></a>
+
 <h2>Purpose</h2>
 <br>
 <p>This project is a clone of weather.com's today and hourly pages. The project uses weatherapi.com to provide the same weather functionality as weather.com and was designed to look just like weather.com minus the ads</p>
