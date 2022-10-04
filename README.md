@@ -10,3 +10,11 @@
 <li>saves last searched location in local storage so when site is reloaded it returns the weather from the most recently searched</li>
 <li>Websites color scheme changes depending on the time of day of the searched location</li>
 </ul>
+
+<h3>Technologies used</h3>
+<ul>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>Javascript</li>
+  <li>React</li>
+</ul>
