@@ -2,9 +2,7 @@
 
 <img src="public/readMeBanner.png">
 
-A weather app built to closely replicate a real-life weather tracking platform.  
-This website follows the **exact design and functionality** of IBM’s Weather Channel **Daily Weather** page and **Three-Day Forecast** page from October 2023.  
-It is developed in **React** to ensure a lightning-fast browsing experience using the virtual DOM.  
+A weather app built to closely replicate a real-life weather tracking platform. This website follows the **exact design and functionality** of IBM’s Weather Channel **Daily Weather** page and **Three-Day Forecast** page from October 2023. It is developed in **React** to ensure a lightning-fast browsing experience using the virtual DOM.  
 All weather functionality is powered by the <a href="https://www.weatherapi.com/">WeatherAPI</a>.
 
 <ul>
@@ -26,7 +24,7 @@ All weather functionality is powered by the <a href="https://www.weatherapi.com/
 <img src="public/quick-nav.jpeg">
 <br>
 This navigation helps users quickly move between the two main pages of the site. Since this project doesn’t include the entire Weather Channel site, the custom nav provides fast access to key features.
-<br>
+<br></br>
 
 <img src="public/searchBar.jpeg">
 <br>
