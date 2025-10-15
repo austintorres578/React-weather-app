@@ -43,5 +43,22 @@ Seach Bar is the first point of interest to start using the functionality of the
 <img src="public/hourly-reports.png">
 <br>
 <p>Three day forecast page shows details of the next 3 days with hourly accurate reports with stats</p>
-
+<h2>Tech Used/h2>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>React</li>
+  <li>Local Storage</li>
+  <li>API Connectivity</li>
+  <li>Mobile Responsiveness</li>
+</ul>
+<h2>ABout Me</h2>
+Thank you for checking out my work, I hope you enjoyed my site!
+I'm currently searching for a new career opportunity in Web Development and would love to hear from you, so feel free to reach out.
+These are my socials:
+<a href="mailto:austintorres578@gmail.com">austintorres578@gmail.com</a>
+<a href="https://austintorres578.github.io/Web-dev-portfolio/">Portfolio Site</a>
+<a href="https://github.com/austintorres578">Github</a>
+<a href="https://www.linkedin.com/in/austin-torres-55696420a/">Linkedin</a>
 
