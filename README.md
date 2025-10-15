@@ -37,4 +37,11 @@ Seach Bar is the first point of interest to start using the functionality of the
 <img src="public/daily-stats.png">
 <br>
 <p>Display dynamic in depth stats daily weather stats for the area searched, with a mini hourly forecast thats expaned on in the <a href="https://bejewelled-unicorn-5837be.netlify.app/details">three day forecast page</a></p>
+<br>
+<a href="https://bejewelled-unicorn-5837be.netlify.app/details">Three Day Forecast Page</a>
+<br>
+<img src="public/hourly-reports.png">
+<br>
+<p>Three day forecast page shows details of the next 3 days with hourly accurate reports with stats</p>
+
 
