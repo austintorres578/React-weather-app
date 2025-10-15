@@ -15,11 +15,19 @@ A weather app that is as close as can be to a real life weather tracking product
 
 <h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/"> Weather Channel Clone</a></h2>
 
+<a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
+
 <img src="public/quick-nav.jpeg">
 <br>
 This nav is to help viewers quickly naviage the 2 pages I've made on the site. Since the project isnt the entire weathe chaneel this nav will help users wuickly go to the main features of the clone
 
 <img src="public/searchBar.jpeg">
 <br>
-<a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
 Seach Bar is the first point of interest to start using the functionality of the site. You can search by zipcodes or by using plain english, the load will be instantanious because of the awesomeness that is React
+<br>
+<img src="public/daily-temp.png">
+<small>Desktop</small>
+<img src="public/mobile-daily.png">
+<small>Mobile</small>
+<br>
+Displays Dynamic sky image/weather icon depending on time of day and weather forecast. Mobile view display the same information but has animated buttons display info in a mobile friendly format
