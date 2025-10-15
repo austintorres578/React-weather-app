@@ -13,7 +13,7 @@ A weather app that is as close as can be to a real life weather tracking product
   <li>Background and color scheme of site changes dynamically depending on the searched locations time of day/weather</li>
 </ul>
 
-<h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone</a></h2>
+<h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/"> Weather Channel Clone</a></h2>
 
 <h2>Purpose</h2>
 <br>
