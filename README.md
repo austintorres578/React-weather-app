@@ -1,6 +1,6 @@
 <h1>The Ultime Weather App (Weather Channel Clone)</h1>
 
-<img src="public/readMeBanner.png">
+<img style="display:block;margin-left:auto;margin-right:auto" src="public/readMeBanner.png">
 A weather app that is as close as can be to a real life weather tracking product. The website follows the exact design and functionality of IBM's Weather Channel's daily weather page and three day forcast page from october 2023. The site in React to ensure a lightning fast browsing experience utilizing the virtual DOM. Functionality was all possible by using the <a href="https://www.weatherapi.com/">WeatherAPI</a>
 <ul>
   <li>Built Using React</li>
