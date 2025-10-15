@@ -11,6 +11,7 @@ A weather app that is as close as can be to a real life weather tracking product
   <li>Weather Information will be provided when giving the sites search bar a zipcode or plain english location</li>
   <li>International daily,hourly and three day forecast tempertures as well as stats like uv index, humidity, wind, pressure and much more </li>
   <li>Background and color scheme of site changes dynamically depending on the searched locations time of day/weather</li>
+  <li>Uses Local storage to load last searched weather report on page reload</li>
 </ul>
 
 <h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/"> Weather Channel Clone</a></h2>
@@ -20,7 +21,7 @@ A weather app that is as close as can be to a real life weather tracking product
 <img src="public/quick-nav.jpeg">
 <br>
 This nav is to help viewers quickly naviage the 2 pages I've made on the site. Since the project isnt the entire weathe chaneel this nav will help users wuickly go to the main features of the clone
-
+<br>
 <img src="public/searchBar.jpeg">
 <br>
 Seach Bar is the first point of interest to start using the functionality of the site. You can search by zipcodes or by using plain english, the load will be instantanious because of the awesomeness that is React
@@ -31,4 +32,9 @@ Seach Bar is the first point of interest to start using the functionality of the
 <img src="public/mobile-daily.png">
 <small>Mobile</small>
 <br>
-Displays Dynamic sky image/weather icon depending on time of day and weather forecast. Mobile view display the same information but has animated buttons display info in a mobile friendly format
+<p>Displays dynamic sky image/weather icon depending on time of day and weather forecast. Mobile view display the same information but has animated buttons to display info in a mobile friendly format</p>
+<br>
+<img src="public/daily-stats.png">
+<br>
+<p>Display dynamic in depth stats daily weather stats for the area searched, with a mini hourly forecast thats expaned on in the <a href="https://bejewelled-unicorn-5837be.netlify.app/details">three day forecast page</a></p>
+
