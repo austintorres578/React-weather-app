@@ -43,7 +43,7 @@ Seach Bar is the first point of interest to start using the functionality of the
 <img src="public/hourly-reports.png">
 <br>
 <p>Three day forecast page shows details of the next 3 days with hourly accurate reports with stats</p>
-<h2>Tech Used/h2>
+<h2>Tech Used</h2>
 <ul>
   <li>HTML</li>
   <li>CSS</li>
