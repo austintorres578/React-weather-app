@@ -15,6 +15,10 @@ A weather app that is as close as can be to a real life weather tracking product
 
 <h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/"> Weather Channel Clone</a></h2>
 
+<img src="public/quick-nav.jpeg">
+<br>
+This nav is to help viewers quickly naviage the 2 pages I've made on the site. Since the project isnt the entire weathe chaneel this nav will help users wuickly go to the main features of the clone
+
 <img src="public/searchBar.jpeg">
 <br>
 <a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
