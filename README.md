@@ -22,33 +22,33 @@ All weather functionality is powered by the <a href="https://www.weatherapi.com/
 <a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
 
 <img src="public/quick-nav.jpeg" />
-<br />
+<br><br />
 This navigation helps users quickly move between the two main pages of the site. Since this project doesn’t include the entire Weather Channel site, the custom nav provides fast access to key features.
-<br />
+<br><br />
 
 <img src="public/searchBar.jpeg" />
-<br />
+<br><br />
 The search bar is the starting point of the app’s functionality. Enter a ZIP code or a plain English location, and results load almost instantly thanks to React.
-<br />
+<br><br />
 
 <img src="public/daily-temp.png" />
 <small>Desktop</small>
-<br />
+<br><br />
 <img src="public/mobile-daily.png" />
 <small>Mobile</small>
-<br />
+<br><br />
 <p>Displays dynamic sky imagery and weather icons based on time and conditions. On mobile, animated buttons provide a touch-friendly layout.</p>
-<br />
+<br><br />
 
 <img src="public/daily-stats.png" />
-<br />
+<br><br />
 <p>Shows in-depth daily weather statistics for the selected location, along with a mini hourly preview (expanded further on the <a href="https://bejewelled-unicorn-5837be.netlify.app/details">Three-Day Forecast page</a>).</p>
-<br />
+<br><br />
 
 <a href="https://bejewelled-unicorn-5837be.netlify.app/details">Three-Day Forecast Page</a>
-<br />
+<br><br />
 <img src="public/hourly-reports.png" />
-<br />
+<br><br />
 <p>The three-day forecast page provides detailed hourly reports with accurate stats and projections.</p>
 
 <h2>Tech Used</h2>
