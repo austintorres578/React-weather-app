@@ -27,6 +27,7 @@ Seach Bar is the first point of interest to start using the functionality of the
 <br>
 <img src="public/daily-temp.png">
 <small>Desktop</small>
+<br>
 <img src="public/mobile-daily.png">
 <small>Mobile</small>
 <br>
