@@ -15,8 +15,7 @@ A weather app that is as close as can be to a real life weather tracking product
 
 <h2>Deployed on Netlify -<a href="https://bejewelled-unicorn-5837be.netlify.app/"> Weather Channel Clone</a></h2>
 
-<img src="public/searchBar.jpeg
-">
+<img src="public/searchBar.jpeg">
 <br>
 <a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
 Seach Bar is the first point of interest to start using the functionality of the site. You can search by zipcodes or by using plain english, the load will be instantanious because of the awesomeness that is React
