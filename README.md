@@ -1,6 +1,6 @@
 <h1>The Ultimate Weather App (Weather Channel Clone)</h1>
 
-<img src="public/readMeBanner.png">
+<img src="public/readMeBanner.png" />
 
 A weather app built to closely replicate a real-life weather tracking platform. This website follows the **exact design and functionality** of IBM’s Weather Channel **Daily Weather** page and **Three-Day Forecast** page from October 2023. It is developed in **React** to ensure a lightning-fast browsing experience using the virtual DOM.  
 All weather functionality is powered by the <a href="https://www.weatherapi.com/">WeatherAPI</a>.
@@ -21,34 +21,34 @@ All weather functionality is powered by the <a href="https://www.weatherapi.com/
 
 <a href="https://bejewelled-unicorn-5837be.netlify.app/">Weather Channel Clone Home</a>
 
-<img src="public/quick-nav.jpeg">
-<br>
+<img src="public/quick-nav.jpeg" />
+<br />
 This navigation helps users quickly move between the two main pages of the site. Since this project doesn’t include the entire Weather Channel site, the custom nav provides fast access to key features.
-<br></br>
+<br />
 
-<img src="public/searchBar.jpeg">
-<br>
+<img src="public/searchBar.jpeg" />
+<br />
 The search bar is the starting point of the app’s functionality. Enter a ZIP code or a plain English location, and results load almost instantly thanks to React.
-<br>
+<br />
 
-<img src="public/daily-temp.png">
+<img src="public/daily-temp.png" />
 <small>Desktop</small>
-<br>
-<img src="public/mobile-daily.png">
+<br />
+<img src="public/mobile-daily.png" />
 <small>Mobile</small>
-<br>
+<br />
 <p>Displays dynamic sky imagery and weather icons based on time and conditions. On mobile, animated buttons provide a touch-friendly layout.</p>
-<br>
+<br />
 
-<img src="public/daily-stats.png">
-<br>
+<img src="public/daily-stats.png" />
+<br />
 <p>Shows in-depth daily weather statistics for the selected location, along with a mini hourly preview (expanded further on the <a href="https://bejewelled-unicorn-5837be.netlify.app/details">Three-Day Forecast page</a>).</p>
-<br>
+<br />
 
 <a href="https://bejewelled-unicorn-5837be.netlify.app/details">Three-Day Forecast Page</a>
-<br>
-<img src="public/hourly-reports.png">
-<br>
+<br />
+<img src="public/hourly-reports.png" />
+<br />
 <p>The three-day forecast page provides detailed hourly reports with accurate stats and projections.</p>
 
 <h2>Tech Used</h2>
@@ -66,8 +66,8 @@ The search bar is the starting point of the app’s functionality. Enter a ZIP c
 <p>Thank you for checking out my work — I hope you enjoyed exploring this project!</p>
 <p>I’m currently seeking new opportunities in Web Development and would love to connect.</p>
 
-<strong>My Links:</strong><br>
-<a href="mailto:austintorres578@gmail.com">austintorres578@gmail.com</a><br>
-<a href="https://austintorres578.github.io/Web-dev-portfolio/">Portfolio Site</a><br>
-<a href="https://github.com/austintorres578">GitHub</a><br>
+<strong>My Links:</strong><br />
+<a href="mailto:austintorres578@gmail.com">austintorres578@gmail.com</a><br />
+<a href="https://austintorres578.github.io/Web-dev-portfolio/">Portfolio Site</a><br />
+<a href="https://github.com/austintorres578">GitHub</a><br />
 <a href="https://www.linkedin.com/in/austin-torres-55696420a/">LinkedIn</a>
